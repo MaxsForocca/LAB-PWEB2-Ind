@@ -68,7 +68,9 @@
   -![ejercicio03](ejercicio03.png)
 - Ejercicio 04 
   - Ejecucion del Ejercicio 04
+    - En 'http://localhost:3000'
   -![ejercicio04](ejercicio04.png)
+    - En 'http://localhost:3000/recitar'
   -![ejercicio04-recitar](ejercicio04-recitar.png)
 #
 
