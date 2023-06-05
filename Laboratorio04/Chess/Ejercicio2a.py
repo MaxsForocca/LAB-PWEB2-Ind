@@ -1,3 +1,5 @@
 from interpreter import draw
 from chessPictures import *
-draw(knight)
+
+caballo = Picture(KNIGHT).horizontalMirror()
+draw(caballo)
