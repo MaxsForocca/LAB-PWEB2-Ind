@@ -25,7 +25,13 @@ class Picture:
 
     def negative(self):
         """ Devuelve un negativo de la imagen """
-        return Picture(None)
+        negativo = []
+        for value in self.img:
+            str = ''
+            for i in value:
+                str += self._invColor(i)
+            negativo.append(str)
+        return negativo
 
     def join(self, p):
         """ Devuelve una nueva figura poniendo la figura del argumento 
