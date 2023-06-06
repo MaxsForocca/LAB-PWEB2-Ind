@@ -86,11 +86,13 @@
     - El metodo up: Crea un Picture 'rpta' similar al del metodo join. Tambien crea un bucle for que itera entre 0 y la longitud de 'p.img', en el bucle se agragan los elementos de 'p.img' debajo de 'rpta.img' usando append. Finalmente se retorna 'rpta'.
   ![metodoUp](imagenes/metodoUp.png)
   - under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
-    - El metodo under: 
+    - El metodo under: Crea una lista vacia 'arrayCombinado', tambien se itera simultaneamente con un for cadena1 y cadena2 de 'zip(self.img, p.img)', posteriio a ello se crea un String vacio str y otro for que itera simultaneamente a char1 y char2 de 'zip(cadena1, cadena2)'. Dentro del segundo bucle se compara que 'char2' sea diferente de ' ', pues este el color de fondo y se agrega 'char1' a 'str', sino se agregara 'char2'. Posterior a esto se agrega 'str' a 'arrayCombinado' y se crea un Picture 'rpta' con la lista 'arrayCombinado' y retorna 'rpta'. 
   ![metodoUnder](imagenes/metodoUnder.png)
   - horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
+    - El metodo horizontalRepeat: Crea un Picture 'rpta' y un for que itera entre 0 y la cantidad elementos de la lista 'self.img' y se le asigna a 'rpta.img[i]'  n de veces 'self.img[i]', finalmente retorna 'rpta'. 
   ![metodoHorizontalRepeat](imagenes/metodoHorizontalRepeat.png)
   - verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
+    - El metodo vericalRepeat: Crea un Picure 'rpta' con la lista de 'self' y se usa la funcion extend en 'rpta.img' que agregara n veces las listas que estan en su parametro. Y retorna 'rpta'
   ![metodoVerticalRepeat](imagenes/metodoVerticalRepeat.png)
 - Tenga en cuenta que para implementar todos estos métodos, sólo deberá trabajar sobre la representación interna de un Picture, es decir su atributo img.
 
@@ -112,22 +114,22 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
   - Implemente los métodos de la clase Picture. Se recomienda que implemente la clase picture por etapas, probando realizar los dibujos que se muestran en la siguiente preguntas.
   - Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):
   - Ejercicio2a
-    - Codigo
+    - Codigo: Importa los modulos necesarios y crea las variables: caballoB, caballoN, rpta1 y rpta2. A caballoB se le asigna la figura 'knight', mientras que a caballoN, el negativo de 'knight', por otro lado a rpta1 se le asigna la figura que resulta de caballoB.join(caballoN) y rpta2 es igual a rpta1 encima de el negativo de rpta1. Posterior a ello se dibuja rpta2.
     ![codigoEjercicio2a](imagenes/codigoEjercicio2a.png)
     - Prueba a
     ![pruebaEjercicio2a](imagenes/pruebaEjercicio2a.png)
   - Ejercicio2b
-    - Codigo
+    - Codigo: Se realizan las mismas variables del Ejercicio2a, con la diferencia que rpta2 es igual a rpta1 encima del espejo vertical de rpta1. Y se dibuja rpta2.
     ![codigoEjercicio2b](imagenes/codigoEjercicio2b.png)
     - Prueba b
     ![pruebaEjercicio2b](imagenes/pruebaEjercicio2b.png)
   - Ejercicio2c
-    - Codigo
+    - Codigo: Se dibuja la figura resultante de repetir 3 veces a la derecha la figura 'queen', usando el metodo horizontalRepeat.
     ![codigoEjercicio2c](imagenes/codigoEjercicio2c.png)
     - Prueba c
     ![pruebaEjercicio2c](imagenes/pruebaEjercicio2c.png)
   - Ejercicio2d
-    - Codigo
+    - Codigo: Se crea la variable casillaBN y se la asigna la figura que resulta de poner un 'square' al lado de su negativo. Y se dibuja casillaBN repetido 3 veces con horizontalRepeat.
     ![codigoEjercicio2d](imagenes/codigoEjercicio2d.png)
     - Prueba d
     ![pruebaEjercicio2d](imagenes/pruebaEjercicio2d.png)
