@@ -23,7 +23,7 @@ class Picture:
 
     def horizontalMirror(self):
         """ Devuelve el espejo horizontal de la imagen """
-        # retorna un array IMG
+        # retorna un array img
         horizontal = self.img[::-1]
         return horizontal
 
@@ -53,7 +53,7 @@ class Picture:
     def up(self, p):
         #retorna un Picture, self encima de p
         rpta = Picture(self.img)
-        for i in range(0, len(self.img)):
+        for i in range(0, len(p.img)):
             # se colocan los Strings de p, en orden despues de self
             rpta.img.append(p.img[i])
         return rpta
@@ -83,6 +83,8 @@ class Picture:
             la cantidad de veces que indique el valor de n """
         rpta = Picture(self.img)
         for i in range(0, len(self.img)):
+            # se agragaran mas caracteres si n es almenos mayor a 0, se aumenta n veces rpta.img,
+            # se vuelve a repetir la cadena n veces si es necesario
             rpta.img[i] = rpta.img[i] + (rpta.img[i]*n)
         return rpta
 
