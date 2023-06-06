@@ -29,10 +29,11 @@ class Picture:
 
     def negative(self):
         """ Devuelve un negativo de la imagen """
-        # Retorna un Picture
+        # Retorna un Picture, se crea nega que servira para crear negativo
         nega = []
         for value in self.img:
             str = ''
+            # el nuevo string se creara con los caracteres cambiados, se usa _invColor
             for i in value:
                 str += self._invColor(i)
             nega.append(str)
@@ -45,22 +46,36 @@ class Picture:
         #retorna un Picture
         rpta = Picture(self.img)
         for i in range(0, len(self.img)):
-            rpta.img[i] = rpta.img[i] + p.img[i]
+            # el string de rpta se agrandara o tendra mas caracteres de p, graficamente a la derecha
+            rpta.img[i] += p.img[i]
         return rpta
 
     def up(self, p):
         #retorna un Picture, self encima de p
         rpta = Picture(self.img)
         for i in range(0, len(self.img)):
+            # se colocan los Strings de p, en orden despues de self
             rpta.img.append(p.img[i])
         return rpta
 
     def under(self, p):
         """ Devuelve una nueva figura poniendo la figura p sobre la
             figura actual """
-        rpta = []
-        for value in p.img:
-            rpta.append(value.replace(' ','='))
+        # se crea un arreglo vacio que se agregara a la figura que se retorne
+        arrayCombinado = []
+        # se itera simultaneamente los String de cada arreglo con zip 
+        for cadena1, cadena2 in zip(self.img, p.img):
+            str = ""
+            # se itera los caracteres de cada String con zip
+            for char1, char2 in zip(cadena1, cadena2):
+                # no se considera al ' ' por que es el azul, sino se cambia los strings
+                if char2 == ' ':   
+                    str += char1             
+                    continue
+                str += char2
+            # se agrega la nueva cadena al array
+            arrayCombinado.append(str)
+        rpta = Picture(arrayCombinado)
         return rpta
     
     def horizontalRepeat(self, n):
@@ -72,9 +87,9 @@ class Picture:
         return rpta
 
     def verticalRepeat(self, n):
+        # se hace uso de extend que puede agragar los valores de varias listas en otra, parecido a append
         rpta = Picture(self.img)
-        aux = Picture(self.img)
-        rpta.img.extend(rpta.img * n)
+        rpta.img.extend(rpta.img*n)
         return rpta
 
     #Extra: Sólo para realmente viciosos 
