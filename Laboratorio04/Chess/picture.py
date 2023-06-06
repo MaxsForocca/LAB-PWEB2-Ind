@@ -13,7 +13,7 @@ class Picture:
 
     def verticalMirror(self):
         """ Devuelve el espejo vertical de la imagen """
-        # RETORNA UN ARRAY (IMG)
+        # RETORNA UN Picture
         rpta = Picture(self.img)
         vertical = []
         for value in self.img:
@@ -66,10 +66,10 @@ class Picture:
     def horizontalRepeat(self, n):
         """ Devuelve una nueva figura repitiendo la figura actual al costado
             la cantidad de veces que indique el valor de n """
-        aux = Picture(self.img)
-        for i in range(1, n):
-            aux.join(self)
-        return aux
+        rpta = Picture(self.img)
+        for i in range(0, len(self.img)):
+            rpta.img[i] = rpta.img[i] + (rpta.img[i]*n)
+        return rpta
 
     def verticalRepeat(self, n):
         return Picture(None)
