@@ -81,7 +81,7 @@
   - up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
   ![metodoUp](imagenes/metodoUp.png)
   - under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
-  ![metodoUnder](imagenes/metodoUnder)
+  ![metodoUnder](imagenes/metodoUnder.png)
   - horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
   ![metodoHorizontalRepeat](imagenes/metodoHorizontalRepeat.png)
   - verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
