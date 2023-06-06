@@ -18,8 +18,8 @@ retaguardia = tca.join(queen).join(king).join(act)
 #frente = peones
 frente = pawn.horizontalRepeat(7)
 # equipo = retaguardia + frente
-equipoNegro = frente.up(retaguardia).negative()
-equipoBlanco = retaguardia.up(frente)
+equipoNegro = retaguardia.up(frente).negative()
+equipoBlanco = frente.up(retaguardia)
 
 ubicacionNegro = fila2.under(equipoNegro)
 ubicacionBlanco = fila2.under(equipoBlanco)
