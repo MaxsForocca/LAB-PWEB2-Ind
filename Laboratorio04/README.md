@@ -2,7 +2,7 @@
 <table>
     <theader>
         <tr>
-            <td><img "https://github.com/rescobedoq/pw2/blob/main/epis.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
+            <td><img src = "https://github.com/rescobedoq/pw2/blob/main/epis.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
             <th>
                 <span style="font-weight:bold;">UNIVERSIDAD NACIONAL DE SAN AGUSTIN</span><br />
                 <span style="font-weight:bold;">FACULTAD DE INGENIERÍA DE PRODUCCIÓN Y SERVICIOS</span><br />
@@ -71,16 +71,22 @@
   - _invColor: recibe un color como un caracter de texto y devuelve su color negativo, también como texto, deberá revisar el archivo colors.py para conocer los valores negativos de cada caracter.
 - La clase Picture contará además con varios métodos que usted deberá implementar:
   - verticalMirror: Devuelve el espejo vertical de la imagen
+    - En el metodo vericalMirror: Se crea un Picture 'rpta' y se una lista 'vertical' que agregara Strings con los caracteres cambiados de orden de 'self.img' usando 'vertical.append(self.img[::-1])' y se agrega a 'rpta' retornandose este ultimo.
   ![metodoVerticalMirror](imagenes/metodoVerticalMirror.png)
   - horizontalMirror: Devuelve el espejo horizontal de la imagen
+    - En el metodo horizontalMirror: Se crea un lista 'horizontal' donde se agregaran los elementos de la lista 'self.img' pero en orden cambiado, el ultimo primero, y finalmente retorna la lista 'horizontal'.
   ![metodoHorizontalMirror](imagenes/metodoHorizontalMirror.png)
   - negative: Devuelve un negativo de la imagen
+    - El metodo negative: Crea una lista 'nega' donde se iran añadiendo los elementos del 'self.img' pero con los caracteres cambiados a su inverter, se usan dos bucles for, el primero itera cada elemento de la lista 'self.img' y tambien crea un String vacio 'str'. El segundo bucle itera entre cada caracter del elemento del primer bucle y se agregan a 'str' los caracteres que devuelve la funcion _invColor. Despues 'str' se agrega a 'nega' que a su ves se manda como parametro a un nuevo Picture 'negativo', finalmente se retorna 'negativo'.
   ![metodoNegative](imagenes/metodoNegative.png)
   - join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual
+    - El metodo join: Crea un Picture 'rpta' con la lista de 'self' y se crea un bucle for que iterara entre el rango de 0 y la longitud de 'self.img', en el bucle se agregaran a cada String de 'rpta.img' los String de 'p.img' que es uno de los argumentos. Finalemnte se retorna 'rpta'.
   ![metodoJoin](imagenes/metodoJoin.png)
   - up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
+    - El metodo up: Crea un Picture 'rpta' similar al del metodo join. Tambien crea un bucle for que itera entre 0 y la longitud de 'p.img', en el bucle se agragan los elementos de 'p.img' debajo de 'rpta.img' usando append. Finalmente se retorna 'rpta'.
   ![metodoUp](imagenes/metodoUp.png)
   - under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
+    - El metodo under: 
   ![metodoUnder](imagenes/metodoUnder.png)
   - horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
   ![metodoHorizontalRepeat](imagenes/metodoHorizontalRepeat.png)
