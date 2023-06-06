@@ -2,14 +2,14 @@
 <table>
     <theader>
         <tr>
-            <td><img src="epis.png" style="width:50%; height:auto"/></td>
+            <td><img "https://github.com/rescobedoq/pw2/blob/main/epis.png?raw=true" alt="EPIS" style="width:50%; height:auto"/></td>
             <th>
                 <span style="font-weight:bold;">UNIVERSIDAD NACIONAL DE SAN AGUSTIN</span><br />
                 <span style="font-weight:bold;">FACULTAD DE INGENIERÍA DE PRODUCCIÓN Y SERVICIOS</span><br />
                 <span style="font-weight:bold;">DEPARTAMENTO ACADÉMICO DE INGENIERÍA DE SISTEMAS E INFORMÁTICA</span><br />
                 <span style="font-weight:bold;">ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS</span>
             </th>
-            <td><img src="abet.png" alt="ABET" style="width:50%; height:auto"/></td>
+            <td><img src="https://github.com/rescobedoq/pw2/blob/main/abet.png?raw=true" alt="ABET" style="width:50%; height:auto"/></td>
         </tr>
     </theader>
     <tbody>
@@ -71,13 +71,21 @@
   - _invColor: recibe un color como un caracter de texto y devuelve su color negativo, también como texto, deberá revisar el archivo colors.py para conocer los valores negativos de cada caracter.
 - La clase Picture contará además con varios métodos que usted deberá implementar:
   - verticalMirror: Devuelve el espejo vertical de la imagen
+  ![metodoVerticalMirror](imagenes/metodoVerticalMirror.png)
   - horizontalMirror: Devuelve el espejo horizontal de la imagen
+  ![metodoHorizontalMirror](imagenes/metodoHorizontalMirror.png)
   - negative: Devuelve un negativo de la imagen
+  ![metodoNegative](imagenes/metodoNegative.png)
   - join: Devuelve una nueva figura poniendo la figura del argumento al lado derecho de la figura actual
+  ![metodoJoin](imagenes/metodoJoin.png)
   - up: Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
+  ![metodoUp](imagenes/metodoUp.png)
   - under: Devuelve una nueva figura poniendo la figura recibida como argumento, sobre la figura actual
+  ![metodoUnder](imagenes/metodoUnder)
   - horizontalRepeat, Devuelve una nueva figura repitiendo la figura actual al costado la cantidad de veces que indique el valor de n
+  ![metodoHorizontalRepeat](imagenes/metodoHorizontalRepeat.png)
   - verticalRepeat Devuelve una nueva figura repitiendo la figura actual debajo, la cantidad de veces que indique el valor de n
+  ![metodoVerticalRepeat](imagenes/metodoVerticalRepeat.png)
 - Tenga en cuenta que para implementar todos estos métodos, sólo deberá trabajar sobre la representación interna de un Picture, es decir su atributo img.
 
 - Para dibujar una objeto Picture bastará importar el método draw de la biblioteca interpreter y usarlo de la siguiente manera:
@@ -95,10 +103,43 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
 
 - Ejercicios:
   - Para resolver los siguientes ejercicios sólo está permitido usar ciclos, condicionales, definición de listas por comprensión, sublistas, map, join, (+), lambda, zip, append, pop, range.
-
   - Implemente los métodos de la clase Picture. Se recomienda que implemente la clase picture por etapas, probando realizar los dibujos que se muestran en la siguiente preguntas.
-
   - Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):
+  - Ejercicio2a
+    - Codigo
+    ![codigoEjercicio2a](imagenes/codigoEjercicio2a.png)
+    - Prueba a
+    ![pruebaEjercicio2a](imagenes/pruebaEjercicio2a.png)
+  - Ejercicio2b
+    - Codigo
+    ![codigoEjercicio2b](imagenes/codigoEjercicio2b.png)
+    - Prueba b
+    ![pruebaEjercicio2b](imagenes/pruebaEjercicio2b.png)
+  - Ejercicio2c
+    - Codigo
+    ![codigoEjercicio2c](imagenes/codigoEjercicio2c.png)
+    - Prueba c
+    ![pruebaEjercicio2c](imagenes/pruebaEjercicio2c.png)
+  - Ejercicio2d
+    - Codigo
+    ![codigoEjercicio2d](imagenes/codigoEjercicio2d.png)
+    - Prueba d
+    ![pruebaEjercicio2d](imagenes/pruebaEjercicio2d.png)
+  - Ejercicio2e
+    - Codigo
+    ![codigoEjercicio2e](imagenes/codigoEjercicio2e.png)
+    - Prueba e
+    ![pruebaEjercicio2e](imagenes/pruebaEjercicio2e.png)
+  - Ejercicio2f
+    - Codigo
+    ![codigoEjercicio2f](imagenes/codigoEjercicio2f.png)
+    - Prueba f
+    ![pruebaEjercicio2f](imagenes/pruebaEjercicio2f.png)
+  - Ejercicio2g
+    - Codigo
+    ![codigoEjercicio2g](imagenes/codigoEjercicio2g.png)
+    - Prueba g
+    ![pruebaEjercicio2g](imagenes/pruebaEjercicio2g.png)
 #
 
 ## CUESTIONARIO
@@ -111,5 +152,5 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
 #
 
 ## REFERENCIAS
-
+https://www.aluracursos.com/blog/append-o-extend-agregar-elementos-a-la-lista-con-python 
 #
