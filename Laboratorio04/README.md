@@ -134,17 +134,17 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
     - Prueba d
     ![pruebaEjercicio2d](imagenes/pruebaEjercicio2d.png)
   - Ejercicio2e
-    - Codigo
+    - Codigo: Se crea la misma variable del casillaBN del ejercicio 2d y se ingresa en el parametro de draw() repetido 3 veces con horizontalRepeat y cambiado a su negativo.
     ![codigoEjercicio2e](imagenes/codigoEjercicio2e.png)
     - Prueba e
     ![pruebaEjercicio2e](imagenes/pruebaEjercicio2e.png)
   - Ejercicio2f
-    - Codigo
+    - Codigo: Se crea la misma figura casillaBN de los dos ejercicios anteriores y tambien se crea fila, fila2 y medioTablero. fila es la figura de repetir 3 veces la casillaBN con horizontalRepeat, fila2 se crea con poner fila sobre el negativo de fila y medioTablero de poner fila2 arriba de fila2. Finalmente se dibuja medioTablero.
     ![codigoEjercicio2f](imagenes/codigoEjercicio2f.png)
     - Prueba f
     ![pruebaEjercicio2f](imagenes/pruebaEjercicio2f.png)
   - Ejercicio2g
-    - Codigo
+    - Codigo: Se vuelve a utilizar la figura casillaBN, fila y fila2 del ejercicio anterior. Tambien se crea campoBatalla que es la figura que resulta de repetir verticalmente fila2 usando verticalRepeat. Ademas se crea la figura 'tca' que resulta de poner a bishop a la derecha de knigth que a su vez se ubica a la derecha de rock. La figura 'act' es el vericalMirror de 'tca', 'retaguardia' se origina de poner en orden a la derecha 'tca', 'queen', 'king' y 'act' haciendo uso del metodo join, 'frente' se crea tras repetir 7 veces la figura pawn con  horizontalRepeat.
     ![codigoEjercicio2g](imagenes/codigoEjercicio2g.png)
     - Prueba g
     ![pruebaEjercicio2g](imagenes/pruebaEjercicio2g.png)
