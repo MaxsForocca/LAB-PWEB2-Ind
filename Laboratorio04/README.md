@@ -155,13 +155,15 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
 - ¿Qué son los archivos *.pyc?
   - Los arhivos con extension .pyc, son archivos que crean al utilizar modulos importados en un programa python, ya que estos modulos contienen versiones ya compiladas o interpretadas. Por ello despues de hacer la primera ejecucion del programa que tiene importado un modulo, se usaran estos archivos.pyc
 - ¿Para qué sirve el directorio pycache?
-  - 
+  - El direcctorio __pychache__ en python en una carpeta que guarda a los archivos con extension *.pyc esto se hace con la finalidad de acelerar los modulos importados en el programa.
 - ¿Cuáles son los usos y lo que representa el subguión en Python?
-  - R
+  - El guion bajo se utiliza en muchas cosas al programar en Python, en el presente laboratorio se vio guiones bajos en el directorio __pycache__ y los metodos de Picture __init__, __eq__ y _invColor. En los metodos de Picture se utiliza doble guion bajo antes y despues del nombre de metodo, para indicar metodos especificos, en el caso de un guion bajo antes del nombre del metodo, nos indica que es un metodo de caracter privado. Aunque se pueden acceder igualmente a estos metodos, son buenas practicas implementarlos.
 #
 
 ## REFERENCIAS
-https://www.aluracursos.com/blog/append-o-extend-agregar-elementos-a-la-lista-con-python 
-https://techlandia.com/son-archivos-pyc-python-info_305351/
+    - https://www.aluracursos.com/blog/append-o-extend-agregar-elementos-a-la-lista-con-python 
+    - https://techlandia.com/son-archivos-pyc-python-info_305351/
+    - https://docs.python.org/es/3/tutorial/modules.html
+    - https://frankgalandev.com/que-significa-el-guion-bajo-en-python/
 
 #
