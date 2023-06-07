@@ -144,7 +144,8 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
     - Prueba f
     ![pruebaEjercicio2f](imagenes/pruebaEjercicio2f.png)
   - Ejercicio2g
-    - Codigo: Se vuelve a utilizar la figura casillaBN, fila y fila2 del ejercicio anterior. Tambien se crea campoBatalla que es la figura que resulta de repetir verticalmente fila2 usando verticalRepeat. Ademas se crea la figura 'tca' que resulta de poner a bishop a la derecha de knigth que a su vez se ubica a la derecha de rock. La figura 'act' es el vericalMirror de 'tca', 'retaguardia' se origina de poner en orden a la derecha 'tca', 'queen', 'king' y 'act' haciendo uso del metodo join, 'frente' se crea tras repetir 7 veces la figura pawn con  horizontalRepeat.
+    - Codigo: Se vuelve a utilizar la figura casillaBN, fila y fila2 del ejercicio anterior. Tambien se crea campoBatalla que es la figura que resulta de repetir verticalmente fila2 usando verticalRepeat. Ademas se crea la figura 'tca' que resulta de poner a bishop a la derecha de knigth que a su vez se ubica a la derecha de rock. La figura 'act' es el vericalMirror de 'tca', 'retaguardia' se origina de poner en orden a la derecha 'tca', 'queen', 'king' y 'act' haciendo uso del metodo join, 'frente' se crea tras repetir 7 veces la figura pawn con  horizontalRepeat. 
+    - Finalmente se crean equipoNegro que es la figura resultante de poner retaguardia arriba de frente y cambiarle el color con negative, por su parte, en equipoBlanco se ubica a frente arriba de retaguardia, ubicacionNegro y ubicacionBlanco se origina de poner encima de fila2 a equipoNegro y equipoBlanco respectivamente usando el metodo undeer. Y se dibuja a tablero que es la figura que contiene equipoNegro arriba de campoBatalla y campoBatalla arriba de equipoBlanco.
     ![codigoEjercicio2g](imagenes/codigoEjercicio2g.png)
     - Prueba g
     ![pruebaEjercicio2g](imagenes/pruebaEjercicio2g.png)
@@ -152,13 +153,15 @@ Hello from the pygame community. https://www.pygame.org/contribute.html
 
 ## CUESTIONARIO
 - ¿Qué son los archivos *.pyc?
-  - R
+  - Los arhivos con extension .pyc, son archivos que crean al utilizar modulos importados en un programa python, ya que estos modulos contienen versiones ya compiladas o interpretadas. Por ello despues de hacer la primera ejecucion del programa que tiene importado un modulo, se usaran estos archivos.pyc
 - ¿Para qué sirve el directorio pycache?
-  - R
+  - 
 - ¿Cuáles son los usos y lo que representa el subguión en Python?
   - R
 #
 
 ## REFERENCIAS
 https://www.aluracursos.com/blog/append-o-extend-agregar-elementos-a-la-lista-con-python 
+https://techlandia.com/son-archivos-pyc-python-info_305351/
+
 #
