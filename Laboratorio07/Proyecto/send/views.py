@@ -6,7 +6,7 @@ def index(request):
     
     send_mail('Hola desde Mi Proyecto de Django',
     'Hola, este es un mensaje automatico.',
-    'mforocca@unsa.edu.pe',
+    'maxs.sebas@gmail.com',
     ['retac43400@msback.com'],
     fail_silently=False)
     
