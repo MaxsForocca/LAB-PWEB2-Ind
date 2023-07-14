@@ -20,7 +20,8 @@ from django.urls import path, include
 from .views import GeneratePDF
 
 urlpatterns = [
-    #path('', include("Aplicacion1.urls")),
+    #path('Aplicacion1/', include("Aplicacion1.urls")),
     path('admin/', admin.site.urls),
     path('pdf/', GeneratePDF.as_view()),
+    path('', include("send.urls")),
 ]

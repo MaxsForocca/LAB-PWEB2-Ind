@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Aplicacion1',
+    'send',
 ]
 
 MIDDLEWARE = [
@@ -119,7 +120,16 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = 'smtp.unsa.edu' # ?? de la UNSA
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'mforocca@unsa.edu.pe'
+#EMAIL_HOST_PASSWORD = 'contraseniaramdom'
+#EMAIL_USE_TLS = True
+EMAIL_USE_SSL = True
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
