@@ -1,24 +1,24 @@
 from django.db import models
 
 # Create your models here.
-"""
+
 # One to Many
-class Empresa(models.Model):
+class Lenguaje(models.Model):
     name = models.CharField(max_length = 50)
     
     def __str__(self):
         return self.name
 
-class Videojuego(models.Model):
+class Framework(models.Model):
     name = models.CharField(max_length = 150)
-    empresa = models.Foreignkey(Empresa, on_delete = models.CASCADE)
+    lenguaje = models.ForeignKey(Lenguaje, on_delete = models.CASCADE)
 
     def __str__(self):
         return self.name
-"""
 
-"""
-Many to Many
+
+
+#Many to Many
 
 class Movie(models.Model):
     name = models.CharField(max_length = 100)
@@ -32,4 +32,3 @@ class Character(models.Model):
     
     def __str__(self):
         return self.name
-"""
