@@ -83,7 +83,7 @@
 
       
   - Impresión de pdfs
-    - Codigo: Para realizar la relación de uno a muchos en bases de datos de Django, se inspeccionaron los videos del Laboratorio y se ejecuto el siguiente comando en la consola "pip install --pre xhtml2pdf" para poder trabajar con PDFs en Django. En la el archivo "views.py" de Proyecto se importa View, render_to_pdf y get_template, ademas se crea la clase GeneratePDF que capta la plantilla con el nombre "invoice.html" (con la modificacion en settings.py para trabajar con plantillas), se crea un contexto para el template y se renderiza a pdf. En el caso de haberse renderizado, se le otorga un nombre, contenido y al momento de descargar el pdf, se le da un nombre de descarga por defecto.
+    - Codigo: Para realizar la impresion de Pdf en Django, se inspecciono el video del Laboratorio y se ejecuto el siguiente comando en la consola "pip install --pre xhtml2pdf" para poder trabajar con PDFs en Django. En la el archivo "views.py" de Proyecto se importa View, render_to_pdf y get_template, ademas se crea la clase GeneratePDF que capta la plantilla con el nombre "invoice.html" (con la modificacion en settings.py para trabajar con plantillas), se crea un contexto para el template y se renderiza a pdf. En el caso de haberse renderizado, se le otorga un nombre, contenido y al momento de descargar el pdf, se le da un nombre de descarga por defecto.
     - ![Codigo_Pdf](imagenes/3-Pdf_codigo.png)
     - Ejecucion: Para mostrar la ejecucion, se otorgo la URL (en urls.py) de "pdf/", donde se muestra la pagina del template Invoice renderizado a pdf.
     - ![pagina_Pdf](imagenes/3-Pdf_paginaInvoice.png)
@@ -92,7 +92,20 @@
    
       
   - Envio de emails
+    - Codigo: Para realizar el envio de Emails en Django, se inspecciono el video del Laboratorio y se creo la aplicacion: "send". En el archivo views.py de la aplicacion se importo send_mail y se creo la funcion index, que utilizara send_mail para enviar un mensaje email, en el primer campo se indica el asunto, en el segundo el contenido y dentro de corchetes, en forma de String se coloca el correo que recibira el mensaje. Para ello se utilizo un correo temporal de la pagina "temp-mail". Finalmente se enviara el template index.
+    - ![Codigo_Emails](imagenes/4-Emails_codigo.png)
+    - Settings: Para poder enviar un Email desde Django, se agrego a settings.py el host, puerto, ssl, tls, correo y contraseña.
+    - ![Settings_Emails](imagenes/4-Emails_settings.png)
+    - Envio: Al momento de correr el servidor, y dirigirse a la ruta por defecto (se especifico en urls.py para enviar el email), se muestra el template index mostrando el mensaje de que se envio al correo.
+    - ![Envio_Emails](imagenes/4-Emails_envio.png)
+    - Recepcion: Cuando nos dirigimos al correo temporal se puede evidenciar que se recivio exitosamente el correo enviado desde Django.
+    - ![Recepcion_Emails](imagenes/4-Emails_recepcion.png)
+   
+       
   - Commits
+    - Commits importantes al momento de realizar el laboratorio.
+    - ![Commits1](imagenes/Commits1.png)
+    - ![Commits2](imagenes/Commits2.png)
 #
 
 ## CUESTIONARIO
