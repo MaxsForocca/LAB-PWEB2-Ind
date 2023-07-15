@@ -98,7 +98,7 @@
     - ![Settings_Emails](imagenes/4-Emails_settings.png)
     - Envio: Al momento de correr el servidor, y dirigirse a la ruta por defecto (se especifico en urls.py para enviar el email), se muestra el template index mostrando el mensaje de que se envio al correo.
     - ![Envio_Emails](imagenes/4-Emails_envio.png)
-    - Recepcion: Cuando nos dirigimos al correo temporal se puede evidenciar que se recivio exitosamente el correo enviado desde Django.
+    - Recepcion: Cuando nos dirigimos al correo temporal se puede evidenciar que se recibio exitosamente el correo enviado desde Django.
     - ![Recepcion_Emails](imagenes/4-Emails_recepcion.png)
    
        
