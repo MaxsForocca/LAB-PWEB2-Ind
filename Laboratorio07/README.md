@@ -57,7 +57,9 @@
 
 
 ## EJERCICIOS PROPUESTOS
-
+  - Enlace a los videos:
+    - Video 1 Relaciones: https://flip.com/s/Bs4HsSgSy-2S 
+    - Video 2 Pdf/Emails: https://flip.com/s/uVVrm1HNBaoV 
   - Relación de uno a muchos
     - Código: Para realizar la relación de uno a muchos en bases de datos de Django, se inspeccionaron los videos del Laboratorio y se creo una version similar en el archivo models.py de la aplicacion: "Aplicacion1", del proyecto: "Proyecto", del presente trabajo. Donde se tiene a la Clase Lenguaje y Framework, en la cual los frameworks tienen un lenguaje con el que trabajan y los lenguajes pueden tener varios frameworks, se utiliza "models.Foreignkey()" para hacer la relación de uno a muchos.
     - ![Codigo_OtM](imagenes/1-OtM_codigo.png)
